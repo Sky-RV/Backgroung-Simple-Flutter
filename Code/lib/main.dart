@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:simple/ImageBG.dart';
-import 'package:simple/ObliqueSmooth.dart';
+import 'package:simple/Oblique.dart';
+import 'package:simple/Smooth.dart';
 
 void main() => runApp(MyApp());
 
@@ -40,11 +41,23 @@ class MyHomePage extends StatelessWidget {
             SizedBox(height: 20,),
 
             ElevatedButton(
+              child: Text("Linear Oblique Background"),
+              onPressed: (){
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => Oblique())
+                );
+              },
+            ),
+
+            SizedBox(height: 20,),
+
+            ElevatedButton(
               child: Text("Linear Smooth Background"),
               onPressed: (){
                 Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => ObliqueSmooth())
+                    MaterialPageRoute(builder: (context) => Smooth())
                 );
               },
             )

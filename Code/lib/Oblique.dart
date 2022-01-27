@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
-class ObliqueSmooth extends StatelessWidget {
+class Oblique extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Image Background',
+      title: 'Oblique Background',
       debugShowCheckedModeBanner: false,
       //theme: ThemeData(colorScheme: ColorScheme.light()),
       home: MyHomePage(),
