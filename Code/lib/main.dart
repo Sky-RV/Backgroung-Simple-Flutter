@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:simple/ImageBG.dart';
 import 'package:simple/Oblique.dart';
+import 'package:simple/Radial.dart';
 import 'package:simple/Smooth.dart';
 
 void main() => runApp(MyApp());
@@ -58,6 +59,18 @@ class MyHomePage extends StatelessWidget {
                 Navigator.push(
                     context,
                     MaterialPageRoute(builder: (context) => Smooth())
+                );
+              },
+            ),
+
+            SizedBox(height: 20,),
+
+            ElevatedButton(
+              child: Text("Linear Radial Background"),
+              onPressed: (){
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => Radial())
                 );
               },
             )
